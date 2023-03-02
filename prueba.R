@@ -7,6 +7,7 @@ data('who')
 pr <- who %>% dplyr::select(year, new_sp_m014, new_sp_f014 )
 prf= pr %>% filter(new_sp_m014 > 0)
 prm= prf %>% filter(new_sp_f014 > 0)
+
 #Datos del año 1996 en adelante (1996 - 2012).
 
 dt3= prm %>% filter(year >= 1996)
